@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Connect to Utrecht Library</title>
+   </head>	
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+      }
+    </style>
+    <body>
+    <h1 style="font-family:Arial;text-align="center";font-size:11pt;
+    color:#00FF00;>
+    UU Library Extension
+	</h1>
+	<form name="login">
+	SolisID<input type="text" name="userid"/><br>
+	Password<input type="password" name="pswrd"/><br>
+	<button>Login</button>
+	<br><br><br>
+	<input type="checkbox" name="rmlg" id="rmlg">Remember Me and Keep Me Logged In<br>
+    <input type="checkbox" name="uuwebp" id="uuwebp" >Sustain the UU Library Webpage
+	</form>
+    <!--
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="popup.js"></script>
+  </body>
+</html>
+

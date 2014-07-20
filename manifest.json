@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+
+  "name": "UULibraryExtension",
+  "description": "This extension connects to Utrecht University Library from remote locations.",
+  "version": "0.4",
+
+  "permissions": ["http://*/","https://*/", "tabs", "cookies", "webNavigation", "history"],
+  "browser_action": {
+    "default_icon": "icon.png",
+	"default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["jquery.min.js", "functions.js", "background.js"],
+    "persistent": true
+  },
+  "options_page": "options.html"
+}
